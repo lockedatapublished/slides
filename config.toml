@@ -1,0 +1,135 @@
+# Site settings
+baseurl = "https://slides.itsalocke.com/"
+languageCode = "en-gb"
+title = "Locke Data"
+theme = "hugo-lockedata"
+copyright = '<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.'
+authors=["LockeData"]
+# Enable Google Analytics by providing your tracking code.
+googleAnalytics = "UA-58415537-1"
+
+[permalinks]
+  posts = "/posts/:title/"
+  talks = "/talks/:title/"
+  
+  
+DefaultContentLanguage = "en"
+
+[social]
+  twitter = "lockedata"
+  facebook = "lockedata"
+  googleplus = "//plus.google.com/+StephanieLocke"
+
+
+[languages.en]
+  weight = 1
+  title = "Locke Data"
+  
+#[languages.de]
+#  weight = 1
+#  title = "Locke Data"
+
+# Some general Theme information:
+#
+# Almost all fields are markdown enabled.
+#
+# Icons use Fontawesome's icon font by default. (fortawesome.github.io/Font-Awesome/icons/)
+# The icons are represented by their corresponding CSS class.
+
+[params]
+  name = "Locke Data"
+    description         = "Locke Data helps organisations get started with data science."
+
+  # Optional list of custom assets for css and js.
+  # Asset links are relative to 'static/'.
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+  image="img/ChibiSteph.png"
+
+
+
+  dateFormat = "Jan 2, 2006"
+
+  # Main menu is by default generated from front-matter settings.
+  [params.navigation]
+    # Optional brand logo used in nav stored in 'static/img/'.
+    logo = "LockeDataTextNew.svg"
+
+  # Pre- and postpended custom links for main menu.
+#  [[languages.en.menu.prepend]]
+#    url = "http://gohugo.io"
+#    name = "Hugo"
+#    weight = 10
+
+#  [[languages.en.menu.postpend]]
+#    url = "https://github.com/digitalcraftsman/hugo-agency-theme"
+#    name = "Theme on GitHub"
+#    weight = 20
+
+#  [[languages.de.menu.postpend]]
+#    url = "https://github.com/digitalcraftsman/hugo-agency-theme"
+#    name = "Theme auf GitHub"
+#    weight = 20
+
+  # Footer
+  [params.footer]
+    enable = true
+
+  [[languages.en.menu.social]]
+    weight = 10
+    name = "twitter"
+    pre = "<i class='fa fa-twitter'></i>"
+    url = "https://twitter.com/lockedata"
+  [[languages.en.menu.social]]
+    weight = 20
+    name = "facebook"
+    pre = "<i class='fa fa-facebook'></i>"
+    url = "https://facebook.com/lockedata"
+  [[languages.en.menu.social]]
+    weight = 30
+    name = "linkedin"
+    pre = "<i class='fa fa-linkedin'></i>"
+    url = "https://linkedin.com/company/locke-data"
+  [[languages.en.menu.social]]
+    weight = 40
+    name = "github"
+    pre = "<i class='fa fa-github'></i>"
+    url = "https://github.com/lockedata"
+
+#  [[languages.de.menu.social]]
+#    weight = 10
+#    name = "twitter"
+#    pre = "<i class='fa fa-twitter'></i>"
+#    url = "#"
+#  [[languages.de.menu.social]]
+#    weight = 20
+#    name = "facebook"
+#    pre = "<i class='fa fa-facebook'></i>"
+#    url = "#"
+#  [[languages.de.menu.social]]
+#    weight = 30
+#    name = "linkedin"
+#    pre = "<i class='fa fa-linkedin'></i>"
+#    url = "#"
+
+ # Custom footer menu items not defined within pages.
+
+   [[languages.en.menu.footer]]
+   weight = 50
+   name = "Bug bounty"
+   url =  "https://goo.gl/forms/KQiYR201Fcn4k9Zh2"
+
+  #[[languages.de.menu.footer]]
+  #  weight = 10
+  #  name = "Privatsphäre"
+  #  url = "#"
+
+  # Optional piwik tracking.
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com".
+  #  domain = "www.example.com"
+  #  # Optional hash for integrity check.
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="

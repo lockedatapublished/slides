@@ -1,0 +1,56 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Contrail+One:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Roboto', sans-serif;
+$mainColor: white;
+$mainFontSize: 40px;
+$headingFont: 'Contrail One', sans-serif;
+$headingColor: white;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$heading1Size: 3em;
+$heading2Size: 2em;
+$heading3Size: 1.5em;
+$backgroundColor: #2165B6;
+$textBackgroundColor: rgba(255, 255, 255, 0.00);
+$linkColor: #E8830C;
+$linkColorHover: #E8830C;
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+$logo: url('https://itsalocke.com/img/LockeDataTextNew.svg');
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// -----------------------------
+
+
+.quote {
+    background-image: url('data:image/svg+xml;utf8,<svg width="508" height="285.75001" xmlns="http://www.w3.org/2000/svg"> <g><title>background</title> <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/> </g> <g> <title>Layer 1</title> <g stroke="null" id="layer1">      <path stroke="null" fill="#ffffff" d="m42.33334,23.812499l0,168.42971l133.41428,0l-49.897087,69.69529l183.681114,-69.69529l140.135011,0l0,-168.42971l-407.333318,0z" id="rect1574"/> </g> </g> </svg>');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .reveal .quote h1 {
+      color: #E8830C;
+  }
